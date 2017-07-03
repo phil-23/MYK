@@ -17,6 +17,7 @@ namespace MYK
         [SerializeField] private List<AnimAction> actions;
         [SerializeField] private float timeBetweenActions = 1f;
         [SerializeField] private Text statusField;
+        [SerializeField] private ScriptableObject nameGen;
 
 
         private Animator _anim;
@@ -31,7 +32,7 @@ namespace MYK
         private void PlayAction()
         {
             AnimAction act = actions[Random.Range(0, actions.Count)];
-            statusField.text = act.name;
+            statusField.text = (nameGen as INameGenerator).Generate();
             if (act.toggle)
             {
                 _anim.SetBool(act.name, true);
