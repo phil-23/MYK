@@ -1,0 +1,184 @@
+{
+	"name" : [
+		"{male_name}"
+	],
+
+	"first_name" : [
+		"{male_first_name}"
+	],
+	
+
+	"male_name" : [
+		"{male_first_name} {nickname_a}",
+		"{male_first_name} {nickname_a}",
+		"{male_first_name} {nickname_a}",
+		"{male_first_name} {nickname_a}",
+		"{male_first_name} {nickname_b}",
+		"{male_first_name} {nickname_b}",
+		"{male_first_name} {nickname_b}",
+		"{male_nickname_special}"
+	],
+	
+	"male_first_name" : [
+		"{male_a}",
+		"{male_b}",
+		"{male_exotic}",
+		"{male_fantastic}"
+	],
+	
+	"male_a" : [
+		"Orange",
+		"Houzuki",
+		"Clover",
+		"Kinoko",
+		"Grenada",
+		"Radius",
+		"Cyprus",
+		"Bamboo",
+		"Cloud",
+		"Tao",
+		"Avalanche",
+		"Metronome",
+		"Kanon",
+		"Oboe",
+		"Organ",
+		"Nan",
+		"Willow",
+		"Scone",
+		"Flask",
+		"Crayon",
+		"Soap"
+	],
+	
+	"male_b" : [
+		"Eiji",
+		"Giomo",
+		"Dusk",
+		"Winter",
+		"Hiran",
+		"Walnut",
+		"Grey",
+		"Schwarze",
+		"Slot",
+		"Joker",
+		"Domino",
+		"Checker",
+		"Cigarro",
+		"Orangepekoe",
+		"Zippo",
+		"Ninepins",
+		"Decathlon",
+		"Cavity",
+		"Bond",
+		"Ruble",
+		"Shilling"
+	],
+	
+	"male_exotic" : [
+		"Moai",
+		"Chupacabra",
+		"Kungfu",
+		"Bushido",
+		"Champion",
+		"Upanishad",
+		"Deathmarch",
+		"Gogh",
+		"Zombie",
+		"Geroppa",
+		"Overkill",
+		"Butcher",
+		"Bronson",
+		"Gygax",
+		"[star]",
+		"[weapon]",
+		"[animal]",
+		"[mineral]",
+		"[dragon]",
+		"[word]"
+	],
+	
+	"male_fantastic" : [
+		"Adam",
+		"Jack",
+		"Oz",
+		"Conan",
+		"Arthur",
+		"Elric",
+		"Gilgamesh",
+		"Maharaja",
+		"Shadowman",
+		"Orpheus",
+		"Solomon",
+		"Raven",
+		"Nyarlathotep",
+		"Annatar",
+		"Xanadu",
+		"Alpione",
+		"Gormenghast",
+		"Innsmouth",
+		"Fuunim",
+		"Xanth",
+		"Ihatovo"
+	],
+	
+	"male_nickname_special" : [
+		"{male_first_name}, Enemy of Seven",
+		"Everyone's Favorite, {male_first_name}",
+		"Mister {male_first_name}",
+		"{male_first_name}, Child of {first_name}",
+		"{male_first_name}, Father of {first_name}"
+	],
+	
+	
+	"nickname_a" : [
+		"the Comeback Kid",
+		"the Indefatigable",
+		"the Joker",
+		"the Risktaker",
+		"the Cautious",
+		"of the Ever Racing Mind",
+		"the Desirable",
+		"the Meek",
+		"the Backbiter",
+		"the Unbreakable",
+		"the Devoted",
+		"the Carouser",
+		"the Unperturbed",
+		"the Intimidating",
+		"the Vainglorious",
+		"the Gentle",
+		"the Beautiful",
+		"the Avoidant",
+		"the Blessed",
+		"the Best in [place]",
+		"the {d6th}"
+	],
+	
+	"d6th" : [
+		"1st",
+		"2nd",
+		"3rd",
+		"4th",
+		"5th",
+		"6th"
+	],
+	
+	"nickname_b" : [
+		"the Blunt",
+		"the Fleet of Foot",
+		"of the Lucky Strike",
+		"the Short Lived",
+		"of the Guilty Conscience",
+		"the Lovestruck",
+		"of the False Faith",
+		"the Patient",
+		"the Open Minded",
+		"the Thorough",
+		"the Gluttonous",
+		"the Knowledgeable",
+		"the Chatterbox",
+		"the Gentle",
+		"the Ironclad",
+		"the Rumoured"
+	]	
+}
