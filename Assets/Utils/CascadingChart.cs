@@ -9,17 +9,35 @@ namespace MYK
     /// </summary>
     public class CascadingChart
     {
-        private Dictionary<string, List<string>> _charts;
-        private char _openEscape, _closeEscape;
-        
-        public CascadingChart(string json, char open = '{', char close = '}')
-        {
-            _openEscape = open;
-            _closeEscape = close;
-            _charts = JsonUtility.FromJson<Dictionary<string, List<string>>>(json);
+        private const char OPEN_ESCAPE = '{';
+        private const char CLOSE_ESCAPE = '}';
 
-            if (_charts == null)
+        [System.Serializable] private class ChartSet
+        {
+            public string version;
+            public List<Chart> charts;
+        }
+
+        [System.Serializable] private class Chart
+        {
+            public string name;
+            public List<string> items;
+        }
+
+        private Dictionary<string, List<string>> _charts;
+        
+        
+        public CascadingChart(string json)
+        {
+            var set = JsonUtility.FromJson<ChartSet>(json);
+            if (set == null || set.charts == null || set.charts.Count == 0)
                 throw new System.ArgumentException("Invalid JSON for charts.");
+
+            _charts = new Dictionary<string, List<string>>();
+            for(int i = 0; i < set.charts.Count; i++)
+            {
+                _charts.Add(set.charts[i].name, set.charts[i].items);
+            }
         }
 
         public string GetResult(string chart)
@@ -28,16 +46,17 @@ namespace MYK
                 throw new System.ArgumentException(chart + " is not a valid chart.");
             string input = _charts[chart].GetRandom();
 
-            for (int last = 0; true; last++)
+            for (int last = 0; true;)
             {
-                int first = input.IndexOf(_openEscape, last);
+                int first = input.IndexOf(OPEN_ESCAPE, last);
                 if (first < 0) break;
 
-                last = input.IndexOf(_closeEscape, first + 1);
+                last = input.IndexOf(CLOSE_ESCAPE, first + 1);
                 if (last < 0) break;
 
                 string middle = input.Substring(first + 1, (last - first) - 1);
                 input = input.Substring(0, first) + Resolve(middle) + input.Substring(last + 1);
+                last = first + middle.Length;
             }
 
             return input;

@@ -1,14 +1,17 @@
 {
-	"name" : [
-		"{male_name}"
-	],
+"version" : "1.0",
+"charts" : [
 
-	"first_name" : [
+	{ "name" : "name", "items" : [
+		"{male_name}"
+	]},
+
+	{ "name" : "first_name", "items" : [
 		"{male_first_name}"
-	],
+	]},
 	
 
-	"male_name" : [
+	{ "name" : "male_name", "items" : [
 		"{male_first_name} {nickname_a}",
 		"{male_first_name} {nickname_a}",
 		"{male_first_name} {nickname_a}",
@@ -17,16 +20,16 @@
 		"{male_first_name} {nickname_b}",
 		"{male_first_name} {nickname_b}",
 		"{male_nickname_special}"
-	],
+	]},
 	
-	"male_first_name" : [
+	{ "name" : "male_first_name", "items" : [
 		"{male_a}",
 		"{male_b}",
 		"{male_exotic}",
 		"{male_fantastic}"
-	],
+	]},
 	
-	"male_a" : [
+	{ "name" : "male_a", "items" : [
 		"Orange",
 		"Houzuki",
 		"Clover",
@@ -48,9 +51,9 @@
 		"Flask",
 		"Crayon",
 		"Soap"
-	],
+	]},
 	
-	"male_b" : [
+	{ "name" : "male_b", "items" : [
 		"Eiji",
 		"Giomo",
 		"Dusk",
@@ -72,9 +75,9 @@
 		"Bond",
 		"Ruble",
 		"Shilling"
-	],
+	]},
 	
-	"male_exotic" : [
+	{ "name" : "male_exotic", "items" : [
 		"Moai",
 		"Chupacabra",
 		"Kungfu",
@@ -95,9 +98,9 @@
 		"[mineral]",
 		"[dragon]",
 		"[word]"
-	],
+	]},
 	
-	"male_fantastic" : [
+	{ "name" : "male_fantastic", "items" : [
 		"Adam",
 		"Jack",
 		"Oz",
@@ -119,18 +122,18 @@
 		"Fuunim",
 		"Xanth",
 		"Ihatovo"
-	],
+	]},
 	
-	"male_nickname_special" : [
+	{ "name" : "male_nickname_special", "items" : [
 		"{male_first_name}, Enemy of Seven",
 		"Everyone's Favorite, {male_first_name}",
 		"Mister {male_first_name}",
 		"{male_first_name}, Child of {first_name}",
 		"{male_first_name}, Father of {first_name}"
-	],
+	]},
 	
 	
-	"nickname_a" : [
+	{ "name" : "nickname_a", "items" : [
 		"the Comeback Kid",
 		"the Indefatigable",
 		"the Joker",
@@ -152,18 +155,18 @@
 		"the Blessed",
 		"the Best in [place]",
 		"the {d6th}"
-	],
+	]},
 	
-	"d6th" : [
+	{ "name" : "d6th", "items" : [
 		"1st",
 		"2nd",
 		"3rd",
 		"4th",
 		"5th",
 		"6th"
-	],
+	]},
 	
-	"nickname_b" : [
+	{ "name" : "nickname_b", "items" : [
 		"the Blunt",
 		"the Fleet of Foot",
 		"of the Lucky Strike",
@@ -180,5 +183,5 @@
 		"the Gentle",
 		"the Ironclad",
 		"the Rumoured"
-	]	
-}
+	]}	
+]}

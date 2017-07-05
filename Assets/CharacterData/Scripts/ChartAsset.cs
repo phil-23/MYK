@@ -13,10 +13,6 @@ namespace MYK
 
         public string GetResult(string chart = null)
         {
-            var foo = new List<string>(new string[] { "a", "b", "c" });
-            string result = JsonUtility.ToJson(foo);
-            Debug.Log(result);
-
             if (_chart == null)
                 LoadChart();
 
