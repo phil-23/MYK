@@ -46,7 +46,7 @@ namespace MYK
                 throw new System.ArgumentException(chart + " is not a valid chart.");
             string input = _charts[chart].GetRandom();
 
-            for (int last = 0; true;)
+            for (int last = 0; last < input.Length;)
             {
                 int first = input.IndexOf(OPEN_ESCAPE, last);
                 if (first < 0) break;
