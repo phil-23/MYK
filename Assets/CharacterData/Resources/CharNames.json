@@ -3,11 +3,135 @@
 "charts" : [
 
 	{ "name" : "name", "items" : [
+		"{female_name}",
 		"{male_name}"
 	]},
 
 	{ "name" : "first_name", "items" : [
+		"{female_first_name}",
 		"{male_first_name}"
+	]},
+	
+	
+	{ "name" : "female_name", "items" : [
+		"{female_first_name} {nickname_a}",
+		"{female_first_name} {nickname_a}",
+		"{female_first_name} {nickname_a}",
+		"{female_first_name} {nickname_a}",
+		"{female_first_name} {nickname_b}",
+		"{female_first_name} {nickname_b}",
+		"{female_first_name} {nickname_b}",
+		"{female_nickname_special}"
+	]},
+	
+	{ "name" : "female_first_name", "items" : [
+		"{female_a}",
+		"{female_b}",
+		"{female_exotic}",
+		"{female_fantastic}"
+	]},
+	
+	{ "name" : "female_a", "items" : [
+		"Jasmine",
+		"Asagao",
+		"Datura",
+		"Daphne",
+		"Primrose",
+		"Marigold",
+		"Magnolia",
+		"Olive",
+		"Clima",
+		"Snow",
+		"Eclaire",
+		"Vivacita",
+		"Kanon",
+		"Harmonica",
+		"Tuba",
+		"Cookie",
+		"Kashkash",
+		"Couscous",
+		"Clip",
+		"Klapadora",
+		"Bloom"
+	]},
+	
+	{ "name" : "female_b", "items" : [
+		"Wednesday",
+		"Noel",
+		"Manana",
+		"Juno",
+		"Blanca",
+		"Rouge",
+		"Scarlet",
+		"Moegi",
+		"Kyrie",
+		"Dice",
+		"Backgammon",
+		"Marble",
+		"Cocoa",
+		"Sveechka",
+		"Chocolat",
+		"Lucha",
+		"Lacrosse",
+		"Pingpong",
+		"Velvet",
+		"Cotton",
+		"Silk"
+	]},
+	
+	{ "name" : "female_exotic", "items" : [
+		"Crystal",
+		"Mbembe",
+		"Yingyang",
+		"Miyako",
+		"Barbie",
+		"Zolge",
+		"Intel",
+		"Victoria",
+		"Onyankopon",
+		"Carmen",
+		"Sashimi",
+		"Devi",
+		"Madonna",
+		"Eroica",
+		"{star}",
+		"{weapon}",
+		"{animal}",
+		"{mineral}",
+		"{dragon}",
+		"{word}"
+	]},
+	
+	{ "name" : "female_fantastic", "items" : [
+		"Eve",
+		"Momo",
+		"Alice",
+		"Leda",
+		"Isis",
+		"Gloriana",
+		"Amaterasu",
+		"Krishna",
+		"Black Lizard",
+		"Venus",
+		"Salome",
+		"Deedlit",
+		"Bast",
+		"Fortuna",
+		"Yomi",
+		"Laputa",
+		"Zenda",
+		"Ys",
+		"Fuunim",
+		"Narnia",
+		"Kalevala"
+	]},
+	
+	{ "name" : "female_nickname_special", "items" : [
+		"{female_first_name}, Enemy of Seven",
+		"Everyone's Favorite, {female_first_name}",
+		"Miss {female_first_name}",
+		"{female_first_name}, Child of {first_name}",
+		"{female_first_name}, Mother of {first_name}"
 	]},
 	
 
@@ -92,12 +216,12 @@
 		"Butcher",
 		"Bronson",
 		"Gygax",
-		"[star]",
-		"[weapon]",
-		"[animal]",
-		"[mineral]",
-		"[dragon]",
-		"[word]"
+		"{star}",
+		"{weapon}",
+		"{animal}",
+		"{mineral}",
+		"{dragon}",
+		"{word}"
 	]},
 	
 	{ "name" : "male_fantastic", "items" : [
@@ -153,7 +277,7 @@
 		"the Beautiful",
 		"the Avoidant",
 		"the Blessed",
-		"the Best in [place]",
+		"the Best in Town",
 		"the {d6th}"
 	]},
 	
@@ -183,5 +307,170 @@
 		"the Gentle",
 		"the Ironclad",
 		"the Rumoured"
-	]}	
+	]},
+
+
+	{ "name" : "word", "items" : [
+		"{word_1}",
+		"{word_2}",
+		"{word_3}",
+		"{word_4}"
+	]},
+	
+	{ "name" : "word_1", "items" : [
+		"Magic",
+		"Dressing Up",
+		"Cramped Spaces",
+		"Staying Up Late",
+		"Fishing",
+		"Discussion",
+		"Beards",
+		"Being Alone",
+		"Boasting",
+		"Self Discovery",
+		"The Opposite Sex",
+		"Frilly Clothes",
+		"Quiet Living",
+		"Talking about Oneself",
+		"Baths",
+		"Old Things",
+		"Stupid People",
+		"Darknesss",
+		"Finance",
+		"People",
+		"Idiots"		
+	]},
+	
+	{ "name" : "word_2", "items" : [
+		"Science",
+		"Reading",
+		"Wide Spaces",
+		"Waking Up Early",
+		"Uselessness",
+		"Work",
+		"Baldness",
+		"Large groups of People",
+		"Flirting",
+		"Old Stories",
+		"The Same Sex",
+		"Weapon Maintenance",
+		"War",
+		"Gossip",
+		"Cutting Hair",
+		"New Things",
+		"Smart People",
+		"Light",
+		"Parents",
+		"The King"
+	]},
+	
+	{ "name" : "word_3", "items" : [
+		"Children",
+		"Weak People",
+		"Executions",
+		"Epic Poetry",
+		"Smoking",
+		"Hospitals",
+		"Showing Off",
+		"Drinking",
+		"Food",
+		"Entertainment",
+		"The Countryside",
+		"One's Kingdom",
+		"Traditions",
+		"Ceremonies",
+		"Snitching",
+		"One's Own Face",
+		"Mayonnaise",
+		"Meddling",
+		"Foreigners",
+		"Dungeons",
+		"Cat Ears"
+	]},
+	
+	{ "name" : "word_4", "items" : [
+		"The Elderly",
+		"Strong People",
+		"Imagination",
+		"Jokes",
+		"Medicine",
+		"Monsters",
+		"Personal Combat",
+		"Gambling",
+		"Songs",
+		"Studying",
+		"Cities",
+		"Adventuring",
+		"Emperor Dynamite",
+		"Evil",
+		"Excuses",
+		"Ogres",
+		"Apologizing",
+		"Stars",
+		"Bugs"
+	]},
+
+	{ "name" : "star", "items" : [
+		"Sirius",
+		"Altair",
+		"Betageuse",
+		"Canopus",
+		"Gamma Cassiopeiae",
+		"Arcturus"
+	]},
+
+	{ "name" : "weapon", "items" : [
+		"Blade",
+		"Dagger",
+		"Battle Axe",
+		"Spear",
+		"Shuriken",
+		"Crossbow",
+		"War Hammer",
+		"Bomb",
+		"Firearm",
+		"Great Sword",
+		"Broom",
+		"Cannon"
+	]},
+
+	{ "name" : "animal", "items" : [
+		"Bat",
+		"Fox",
+		"Cat",
+		"Baboon",
+		"Rat",
+		"Horselizard",
+		"Rabbit",
+		"Bandersnatch",
+		"Boar",
+		"Hound",
+		"Wolf",
+		"Bunny",
+		"Bear"
+	]},
+
+	{ "name" : "mineral", "items" : [
+		"Bedrock",
+		"Clay",
+		"Stone",
+		"Gravel",
+		"Sand",
+		"Red Sand",
+		"Obsidian",
+		"Granite",
+		"Diorite",
+		"Andesite",
+		"Prismarine",
+		"Dark Prismarine",
+		"Glowstone",
+		"Netherrack",
+		"Soul Sand",
+		"Quartz",
+		"End Stone"
+	]},
+
+	{ "name" : "dragon", "items" : [
+		"Dragon"
+	]}
 ]}
