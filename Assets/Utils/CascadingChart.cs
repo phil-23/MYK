@@ -12,6 +12,7 @@ namespace MYK
         private const char OPEN_ESCAPE = '{';
         private const char CLOSE_ESCAPE = '}';
 
+#pragma warning disable 0649
         [System.Serializable] private class ChartSet
         {
             public string version;
@@ -23,6 +24,7 @@ namespace MYK
             public string name;
             public List<string> items;
         }
+#pragma warning restore 0649
 
         private Dictionary<string, List<string>> _charts;
         
@@ -54,9 +56,9 @@ namespace MYK
                 last = input.IndexOf(CLOSE_ESCAPE, first + 1);
                 if (last < 0) break;
 
-                string middle = input.Substring(first + 1, (last - first) - 1);
-                input = input.Substring(0, first) + Resolve(middle) + input.Substring(last + 1);
-                last = first + middle.Length;
+                string result = Resolve(input.Substring(first + 1, (last - first) - 1));
+                input = input.Substring(0, first) + result + input.Substring(last + 1);
+                last = first + result.Length;
             }
 
             return input;

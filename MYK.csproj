@@ -80,9 +80,6 @@
   <ItemGroup>
     <Compile Include="Assets\CharActionTester.cs" />
     <Compile Include="Assets\CharacterData\Scripts\ChartAsset.cs" />
-    <Compile Include="Assets\CharacterData\Scripts\CompoundNameChart.cs" />
-    <Compile Include="Assets\CharacterData\Scripts\INameGenerator.cs" />
-    <Compile Include="Assets\CharacterData\Scripts\SimpleNameChart.cs" />
     <Compile Include="Assets\Utils\CascadingChart.cs" />
     <Compile Include="Assets\Utils\ListUtils.cs" />
   </ItemGroup>
